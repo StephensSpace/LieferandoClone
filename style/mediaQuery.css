@@ -1,0 +1,151 @@
+@media(max-width: 1500px) {
+    #descriptionBox {
+        right: 20px;
+    }
+    #pizzaStarsContainer {
+        right: 18px;
+    }
+
+    #headline {
+        left: 2%;
+    }
+}
+
+@media(max-width: 1000px) {
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    .orderInput {
+        width: 100%;
+    }
+}
+
+@media(max-width: 760px) {
+    #titleImage {
+        height: 70px;
+    }
+    header {
+        height: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: unset;
+    }
+
+    #headline {
+        left: -3%;
+        top: -17%;
+    }
+
+    #descriptionBox {
+        top: 160px;
+        left: 6%;
+    }
+
+    #pizzaStarsContainer {
+        left: 6%;
+        top: 259px;
+    }
+
+    #basket {
+        display: none;
+    }
+    #toogleOverlay {
+        display: block;
+    }
+}
+
+@media(max-width: 660px) {
+    .foodInfoBox {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 530px) {
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 470px) {
+    #toogleOverlay {
+        display: block;
+        top: 316px;
+        width: 250px;
+        left: 30px;
+        height: 40px;
+    }
+
+    .foodImage {
+        width: 128px;
+        height: 128px;
+    }
+
+    #content {
+        width: 88%;
+    }
+    #headline {
+        left: -8%;
+        
+    }
+
+    #descriptionBox {
+        left: 13%;
+    }
+
+    #pizzaStarsContainer {
+        left: 14%;
+    }
+}
+
+@media(max-width: 393px) {
+    #logo {
+        width: 241px;
+        left: 40px;
+    }
+    h1 {
+        font-size: 30px;
+        top: -16px;
+        left: -66px;
+    }
+
+    #pizzaHeader {
+        width: 90px;
+        height: 90px;
+        left: 241px;
+        top: -51px;
+    }
+
+    #descriptionBox {
+        left: 2%;
+        top: 146px;
+    }
+
+    #pizzaStarsContainer {
+        left: 5%;
+        right: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #footerLogo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #footerLinks {
+        margin-bottom: 5px;
+    }
+    #pizzaRecom {
+        font-size: 16px;
+    }
+
+}
+
+

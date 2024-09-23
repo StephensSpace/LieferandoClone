@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/basket.css">
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/mediaQuery.css">
+    <link rel="icon" type="image/png" href="./img/Favicon/favicon.ico">
+    <script src="./db.js"></script>
+    <script src="./basket.js"></script>
+    <script src="./htmlTemplates.js"></script>
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italianno&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="init()" id="body">
+    <header>
+        <div id="headline">
+            <img src="./img/Logo/Bestell App- Logo.svg" alt="Logo" id="logo">
+            <h1>Your Food Place</h1>
+            <img src="./img/Logo/headerPizza.png" id="pizzaHeader">
+        </div>
+        <div id="pizzaStarsContainer">
+            <div>
+                <img src="./img/Logo/headerPizza.png" class="pizzaStars">
+                <img src="./img/Logo/headerPizza.png" class="pizzaStars">
+                <img src="./img/Logo/headerPizza.png" class="pizzaStars">
+                <img src="./img/Logo/headerPizza.png" class="pizzaStars">
+                <img src="./img/Logo/headerPizza.png" class="pizzaStars2">
+            </div>
+            <span id="pizzaRecom">4 von 5 Pizzas auf Pizzastar.de</span>
+        </div>
+        <div id="descriptionBox">
+            <span>Best Pizza and Pasta since 1986</span>
+        </div>
+    </header>
+    <div id="overlay" class="dNone">
+        <div id="basket2">
+            <div id="basket2CloseContainer">
+                <h2 id="basketHeadline2">Warenkorb</h2>
+                <img src="./img/close.png" id="closeBtn" onclick="closeOverlay()">
+            </div>
+            <div id="itemList2" class="itemList2"></div>
+            <div class="totalCalc" id="totalCalc2">
+                <div id="totalPrice2" class="totalPrice">
+                </div>
+                <div class="totalPrice">
+                    <span id="deliveryFee2" class="deliveryFee">Liefergebühr</span>
+                    <span id="deliveryCost2" class="deliveryCost">+2 €</span>
+                </div>
+                <div id="totalPriceWithDeliver2" class="totalPrice">
+                </div>
+
+            </div>
+            <button onclick="sendOrder()" class="sendOrder" id="sendOrder2">
+                Bestellung absenden</button>
+        </div>
+    </div>
+    <div class="backgroundImage">
+        <div id="titleImage">
+        </div>
+        <div id="buttons">
+            <button id="mainDishs" onclick="getMainDish()" class="dishButtons">Hauptgerichte</button>
+            <button id="sideDishs" onclick="getSideDish()" class="dishButtons">Beilagen</button>
+            <button id="drinks" onclick="getDrinks()" class="dishButtons">Getränke</button>
+        </div>
+        <div id="mainContent">
+            <div id="content">
+            </div>
+            <div id="basket">
+                <h2 id="basketHeadline">Warenkorb</h2>
+                <div id="itemList" class="itemList"></div>
+                <div class="totalCalc" id="totalCalc">
+                    <div id="totalPrice" class="totalPrice">
+                    </div>
+                    <div class="totalPrice">
+                        <span id="deliveryFee" class="deliveryFee">Liefergebühr</span>
+                        <span id="deliveryCost" class="deliveryCost">+2 €</span>
+                    </div>
+                    <div id="totalPriceWithDeliver" class="totalPrice">
+                    </div>
+
+                </div>
+                <button onclick="sendOrder()" class="sendOrder" id="sendOrder">
+                    Bestellung absenden</button>
+            </div>
+            <button onclick="openOverlayBasket()" id="toogleOverlay">Warenkorb öffnen</button>
+        </div>
+    </div>
+    <footer>
+        <div id="footerLogoCopyright">
+            <img src="./img/Logo/footerLogo.png" id="footerLogo">
+            <span>&#169 Copyright by Stephen Schaz 2024</span>
+        </div>
+        <div id="footerLinks">
+            <span>Pictures and Buttons by:</span>
+            <span>
+                <a
+                    href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1428931">
+                    Pixabay</a><br>
+                <a href="https://www.flaticon.com/free-icons/soda" title="soda icons">Soda icons created by itim2101 -
+                    Flaticon</a><br>
+                <a href="https://www.flaticon.com/free-icons/salad" title="salad icons">Salad icons created by Good Ware
+                    - Flaticon</a><br>
+                <a href="https://www.flaticon.com/free-icons/porridge" title="porridge icons">Porridge icons created by
+                    Erifqi Zetiawan - Flaticon</a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

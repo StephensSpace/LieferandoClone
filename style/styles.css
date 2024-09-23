@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    
+}
+
+.dNone {
+    display: none !important;
+}
+
+.hideOverflow {
+    overflow-y: hidden;
+}
+
+button {
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    height: 200px;
+    position: relative;
+    background-color: #efa91ac4;
+    align-items: center;
+    box-shadow: 0px 8px 10px #efa91ac4;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+#pizzaHeader {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    filter: drop-shadow(2px 4px 6px black);
+    left: 226px;
+    top: -105px;
+}
+
+#headline {
+    left: 10%;
+    position: relative;
+    top: 8%;
+}
+
+#pizzaStarsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    right: 224px;
+    width: 250px;
+}
+
+.pizzaStars {
+    width: 16px;
+    height: 16px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+#pizzaRecom {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 18px;
+    filter: drop-shadow(2px 4px 6px black);
+    width: -webkit-fill-available;
+    text-wrap: nowrap;
+}
+
+.pizzaStars2 {
+    width: 16px;
+    height: 16px;
+    filter: contrast(0.1);
+}
+
+#descriptionBox {
+    position: absolute;
+    right: 226px;
+    top: 48px;
+    font-size: 42px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.backgroundImage {
+    background-image: url(../img/pizzaPic.jpeg);
+    background-repeat: repeat-y;
+    min-height: calc(100vh - 339px);
+}
+
+#titleImage {
+    width: 100%;
+    height: 120px;
+}
+
+#titlePic {
+    width: 100%;
+    height: 200px;
+}
+
+#logo {
+    width: 250px;
+    filter: drop-shadow(2px 4px 6px black);
+    position: absolute;
+    top: -73px;
+    z-index: 3;
+    left: 42px;
+}
+
+#buttons {
+    width: fit-content;
+    display: flex;
+
+}
+
+.dishButtons {
+    background-color: #ffcc00eb;
+    border: none;
+    border-right: solid 1.5px;
+    cursor: pointer;
+}
+
+h1 {
+    font-style: italic;
+    filter: drop-shadow(2px 4px 6px black);
+    color: #fffeff;
+    width: 375px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: -34px;
+    left: 4px;
+    z-index: 3;
+}
+
+#mainContent {
+    display: flex;
+    min-height: calc(100vh - 339px);
+}
+
+footer {
+    font-size: 16px;
+    display: flex;
+    height: 150px;
+    position: relative;
+    background-color: #efa81a6c;
+    align-items: center;
+    box-shadow: 0px 8px 10px #efa91ac4;
+    filter: drop-shadow(2px 4px 6px black);
+    justify-content: space-between;
+}
+
+#footerLinks {
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerLinks a {
+    color: aliceblue;
+    margin-top: 2px;
+}
+
+#footerLogoCopyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerLogo {
+    width: 64px;
+    height: 64px;
+    margin-left: 20px;
+    margin-right: 8px;  
+}
+
